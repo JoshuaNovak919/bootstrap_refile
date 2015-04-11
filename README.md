@@ -42,8 +42,14 @@ If you want to change the style of the progress bar you can pass it in:
 <% end %>
 ```
 
-Options:
+## Options:
 
 - progress_class
 - remove_class
 - select_class
+
+## Note:
+
+The filename field for Refile is required for this to work, so make sure to add it to your tables.
+
+Another note, this is my first gem, so it's probably pretty awful, if you have a problem open an issue and and let me know if you know how to fix it.
