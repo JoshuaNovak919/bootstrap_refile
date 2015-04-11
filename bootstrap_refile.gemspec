@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["JoshuaNovak919@gmail.com"]
   spec.summary       = "A bootstrap styled single uploader for refile."
   spec.description   = "A bootstrap styled single uploader for refile."
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/JoshuaNovak919/bootstrap_refile"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "railties", ">= 3.1"
-  spec.add_dependency "refile"
+  spec.add_dependency "railties", "~> 3.1"
+  spec.add_dependency "refile", "~> 0.1.0"
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
