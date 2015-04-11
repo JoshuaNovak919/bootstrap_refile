@@ -1,0 +1,106 @@
+.refile-upload {
+
+  .progress {
+    height: 10px;
+    // opacity: 0;
+    margin-bottom: 10px;
+  }
+
+  .file-info {
+    font-size: 12px;
+    opacity: .5;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .file-preview {
+    border: none;
+    border-radius: 0;
+
+    .file-preview-frame {
+      box-shadow: none;
+      border: none;
+      height: auto !important;
+
+      &:hover,
+      &:active,
+      &:focus {
+        box-shadow: none;
+        border: none;
+      }
+
+      // img {
+      //   width: 100%;
+      //   max-width: 150px;
+      //   height: auto !important;
+      // }
+    }
+
+    .fileinput-remove {
+      display: none;
+    }
+  }
+
+  // img.preview {
+  //   width: 100%;
+  //   max-width: 150px;
+  //   height: auto;
+  // }
+
+  // .drop {
+  //   padding: 15px;
+  //   border: 2px #f1f1f1 dashed;
+  //   border-radius: 5px;
+  //   line-height: 34px;
+  // }
+
+  .btn-file {
+      position: relative;
+      overflow: hidden;
+  }
+
+  .btn-file input[type=file] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 100%;
+      min-height: 100%;
+      font-size: 100px;
+      text-align: right;
+      filter: alpha(opacity=0);
+      opacity: 0;
+      outline: none;
+      background: white;
+      cursor: inherit;
+      display: block;
+  }
+
+  .btn-remove {
+    display: none;
+  }
+
+  &.filled {
+    .btn-remove {
+      display: inline-block;
+    }
+
+    .btn-file {
+      display: none;
+    }
+
+    .thumbnail {
+      display: none;
+    }
+
+    &.filled-type-jpg,
+    &.filled-type-jpeg,
+    &.filled-type-png,
+    &.filled-type-gif {
+      .thumbnail {
+        display: block;
+      }
+    }
+  }
+}
