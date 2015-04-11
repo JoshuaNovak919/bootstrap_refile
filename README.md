@@ -30,7 +30,7 @@ Add this line to your stylesheet:
 
 ``` erb
 <%= form_for @user do |form| %>
-  <%= form.bootstrap_attachment_field :profile_image %>
+  <%= form.bootstrap_attachment_field :profile_image, direct: true %>
 <% end %>
 ```
 
@@ -38,7 +38,7 @@ If you want to change the style of the progress bar you can pass it in:
 
 ``` erb
 <%= form_for @user do |form| %>
-  <%= form.bootstrap_attachment_field :profile_image, progress_class: 'progress-bar-danger' %>
+  <%= form.bootstrap_attachment_field :profile_image, direct: true, progress_class: 'progress-bar-danger' %>
 <% end %>
 ```
 
