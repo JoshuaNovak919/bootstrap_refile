@@ -87,12 +87,10 @@ module BootstrapRefile
               </div>
             </div>
             <div class="file-info"><i class="fa #{attachment_icon}"></i> #{file_name}</div>
-            <span class="btn-group btn-remove" data-toggle="buttons">
-              <label class="btn #{options[:remove_class]}">
-                Remove #{attachment_name}
-                #{remove_attachment}
-              </label>
-            </span>
+            <label style="display: block; padding-bottom: 10px;">
+              #{remove_attachment}
+              Remove #{attachment_name}
+            </label>
             <span class="btn #{options[:select_class]} btn-file">
               Select #{attachment_name}
               #{attachment_field}
